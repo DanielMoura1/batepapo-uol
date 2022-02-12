@@ -11,10 +11,22 @@
     margin-left: 20px;
 }
 .opcoesCaixa{
-    background: lightcoral;
+   
     height: 260px;
     overflow-y:scroll;
 
+}
+.imgcadeado{
+    width:25px;
+    height: 25px;
+    margin-right: 25px;
+    margin-left:10px;
+}
+.imgPerfil{
+    width:25px;
+    height: 25px;
+    margin-right: 5px;
+    margin-left:10px;
 }
 .opcoesCaixa2{
     
@@ -27,17 +39,20 @@
 }
 .amarrar{
     display:flex;
+    align-items: center;
 }
-.botao{
+.digitar{
     width: 100vw;
     height:100px;
     position: relative;
+    box-shadow: 10px 5px 5px rgb(243, 243, 243);
 
 }
 .caixaDeTexto{
-    height: 45px;
-    width: 100vw;
     
+    width: 100vw;
+    padding: 1px;
+    margin-bottom:10px;
 }
 .cinza{
     background:gray;
@@ -48,7 +63,7 @@
 .branco{
     background:white;
 }
-.daniel{
+.botao{
     width: 50px;
     height: 50px;
     position: absolute;
@@ -97,12 +112,14 @@
 }
 .opcoes{
     margin-bottom: 5px;
-    background:darkgoldenrod;
+    
+    
+    
     
 }
 .opcoes2{
     margin-bottom: 5px;
-    background:purple;
+   
     
 }
 .seta{
@@ -123,5 +140,11 @@
 .opcoes2.selecionado .seta{
     display: block;
 }
-
+.ad{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.ad2{
+    margin-left: 50px;
+}
 

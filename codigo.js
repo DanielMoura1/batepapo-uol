@@ -49,7 +49,7 @@ function menuSeta(eu,name1){
    
     eu.classList.add('selecionado')
     para=name1
-    alert(para)
+    
 }
 function menuSeta2(eu,pegar){
     const seta =document.querySelector('.opcoesCaixa2 .selecionado')
@@ -61,7 +61,7 @@ function menuSeta2(eu,pegar){
    
     eu.classList.add('selecionado')
     type = pegar
-    alert(type)
+    
 }
 function entrar(){
     
@@ -177,7 +177,7 @@ function selecionarPesoa(pegar){
             
             ull.innerHTML +=`<div class="opcoes"  onclick=" menuSeta(this, '${nomee}')">
                 <div class="amarrar">
-                    <img src="Vector.png">
+                    <img src="Vector.png" class="imgPerfil">
                     <p>
                         ${nomee}
                     </p>

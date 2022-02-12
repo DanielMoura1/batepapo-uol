@@ -20,11 +20,11 @@
             </div>
 
             <div class="caixa">
-                <ul><!-- via js --></ul>
+                <ul></ul>
             </div>
             <div class="plane">
-                <input type="text" placeholder="enviar ..." class="botao">
-                <button  class="daniel" onclick=" mandarMensagem()"  ><ion-icon class="plane2" name="paper-plane-outline"></ion-icon>
+                <input type="text" placeholder="enviar ..." class="digitar">
+                <button  class="botao" onclick=" mandarMensagem()"  ><ion-icon class="plane2" name="paper-plane-outline"></ion-icon>
                     
                 </button>
             </div>
@@ -36,16 +36,16 @@
             </div>
                 <div class="menu " >
                     <div class="ad"  >
-                        <p>
-                            escolha um contato para enviar mensagem
+                        <p class="ad2">
+                            Escolha a visibilidade:
                         </p>
 
                     </div>
                     <div  class="opcoesCaixa2">
                         <div class="opcoes2"  onclick="menuSeta2(this,'private_message')">
                             <div class="amarrar">
-                                <img src="Vector1.png">
-                                <p>
+                                <img src="Vector1.png" class="imgcadeado">
+                                <p >
                                     Reservada
                                 </p>
                                 <ion-icon class="seta" name="checkmark-sharp"></ion-icon>
@@ -53,7 +53,7 @@
                         </div>
                         <div class="opcoes2" onclick="menuSeta2(this,'message')">
                             <div class="amarrar">
-                                <img src="Vector2.png">
+                                <img src="Vector2.png" class="imgcadeado">
                                 <p>
                                     Publico
                                 </p>
@@ -62,10 +62,16 @@
                         </div>
 
                     </div>
+                    <div class="ad"  >
+                        <p class="ad2" >
+                            Escolha um contato para enviar mensagem:
+                        </p>
+
+                    </div>
                     <div class="opcoesCaixa">
                         <div class="opcoes"  onclick=" menuSeta(this, 'Todos')">
                             <div class="amarrar">
-                                <img src="Vector.png">
+                                <img src="Vector.png" class="imgPerfil">
                                 <p>
                                         Todos
                                 </p>
