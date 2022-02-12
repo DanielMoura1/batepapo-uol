@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' href="estilo.css">
+   
+</head>
+<body>
+    <div class="rei">
+        <div class="caixacorpo"> 
+            <div class="topo">
+                <img class="logo" src="logo 1.png" >
+             
+                <ion-icon name="people" onclick="menu()"></ion-icon>
+                
+               
+            </div>
+
+            <div class="caixa">
+                <ul><!-- via js --></ul>
+            </div>
+            <div class="plane">
+                <input type="text" placeholder="enviar ..." class="botao">
+                <button  class="daniel" onclick=" mandarMensagem()"  ><ion-icon class="plane2" name="paper-plane-outline"></ion-icon>
+                    
+                </button>
+            </div>
+
+            
+        </div>
+        <div class="caixamenu barra">
+            <div class="capaDefundo "  onclick="menu()" >
+            </div>
+                <div class="menu " >
+                    <div class="ad"  >
+                        <p>
+                            escolha um contato para enviar mensagem
+                        </p>
+
+                    </div>
+                    <div  class="opcoesCaixa2">
+                        <div class="opcoes2"  onclick="menuSeta2(this,'private_message')">
+                            <div class="amarrar">
+                                <img src="Vector1.png">
+                                <p>
+                                    Reservada
+                                </p>
+                                <ion-icon class="seta" name="checkmark-sharp"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="opcoes2" onclick="menuSeta2(this,'message')">
+                            <div class="amarrar">
+                                <img src="Vector2.png">
+                                <p>
+                                    Publico
+                                </p>
+                                <ion-icon class="seta" name="checkmark-sharp"></ion-icon>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="opcoesCaixa">
+                        <div class="opcoes"  onclick=" menuSeta(this, 'Todos')">
+                            <div class="amarrar">
+                                <img src="Vector.png">
+                                <p>
+                                        Todos
+                                </p>
+                                <ion-icon class="seta" name="checkmark-sharp"></ion-icon>
+                            </div>
+                            
+                        </div >
+                        
+                        <ul class="teste">
+                        </ul>
+
+                        
+                        </div>
+                    </div>
+                    
+                    
+
+                
+                </div>
+            
+          
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  
+    
+    <script src="codigo.js">
+   
+       
+    </script>
+  
+</body>
+</html>

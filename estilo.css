@@ -1,0 +1,127 @@
+.topo{
+    height: 100px;
+    background: rgb(255, 255, 255);
+    font-size:60px;
+    display:flex;
+    align-items:center
+
+}
+.logo{
+    margin-right: 200px;
+    margin-left: 20px;
+}
+.opcoesCaixa{
+    background: lightcoral;
+    height: 260px;
+    overflow-y:scroll;
+
+}
+.opcoesCaixa2{
+    
+    height: 200px;
+    
+    
+    
+   
+
+}
+.amarrar{
+    display:flex;
+}
+.botao{
+    width: 100vw;
+    height:100px;
+    position: relative;
+
+}
+.caixaDeTexto{
+    height: 45px;
+    width: 100vw;
+    
+}
+.cinza{
+    background:gray;
+}
+.rosa{
+    background: pink;
+}
+.branco{
+    background:white;
+}
+.daniel{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom:10px;
+    right: 60px;
+}
+.plane{
+    position: relative;
+    
+}
+.plane2{
+    font-size:35px;
+}
+.caixa{
+    height: 450px;
+    width: 100vw;
+    background:rgb(229, 229, 229);
+    overflow-y:scroll;
+}
+.rei{
+    display: flex;
+}
+.menu{
+    height:100vh;
+    width: 230px;
+    background:rgb(255, 255, 255);
+    position: absolute;
+    
+   
+    bottom:0px;
+    right: 0px;
+   
+  
+   
+}
+.capaDefundo{
+    width:375px;
+    height:100vh;
+    background:rgba(97, 97, 97, 0.755);
+    position: absolute;
+    left:0;
+    bottom:-1;
+}
+.barra{
+    display: none;
+}
+.opcoes{
+    margin-bottom: 5px;
+    background:darkgoldenrod;
+    
+}
+.opcoes2{
+    margin-bottom: 5px;
+    background:purple;
+    
+}
+.seta{
+    color:green;
+}
+.opcoes .seta {
+    display: none;
+}
+.opcoes2 .seta {
+    display: none;
+}
+
+    
+
+.opcoes.selecionado .seta{
+    display: block;
+}
+.opcoes2.selecionado .seta{
+    display: block;
+}
+
+
