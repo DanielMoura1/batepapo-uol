@@ -21,12 +21,14 @@
     height: 25px;
     margin-right: 25px;
     margin-left:10px;
+    margin-bottom: 5px;
 }
 .imgPerfil{
     width:25px;
     height: 25px;
     margin-right: 5px;
     margin-left:10px;
+    margin-bottom: 5px;
 }
 .opcoesCaixa2{
     
@@ -51,8 +53,10 @@
 .caixaDeTexto{
     
     width: 100vw;
-    padding: 1px;
-    margin-bottom:10px;
+    padding: 5px;
+    margin-bottom:5px;
+    
+    
 }
 .cinza{
     background:gray;
@@ -82,6 +86,7 @@
     width: 100vw;
     background:rgb(229, 229, 229);
     overflow-y:scroll;
+  
 }
 .rei{
     display: flex;
@@ -93,7 +98,7 @@
     position: absolute;
     
    
-    bottom:0px;
+    top:0px;
     right: 0px;
    
   
@@ -141,8 +146,8 @@
     display: block;
 }
 .ad{
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 .ad2{
     margin-left: 50px;

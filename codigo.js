@@ -21,6 +21,7 @@ function  mandarMensagem(){
     
     let TEXTO = document.querySelector("input").value;
     console.log('TEXTO'+TEXTO)
+    
         
         //----------------------------------------------------------------
 
@@ -31,8 +32,16 @@ function  mandarMensagem(){
             text: TEXTO,
             type: type // ou "private_message" para o bônus
         })
+        promessaMandar.then(apagador)
+
+        
 
     servidor()
+}
+function apagador(apaga){
+    
+    document.querySelector("input").value=''
+
 }
 function menu(){
     const imgg=document.querySelector('.caixamenu')
@@ -103,21 +112,12 @@ function pegador(pegar){
         let ul = document.querySelector("ul");
         ul.scrollIntoView(false);
         if(axt =='entra na sala...'|| axt=='sai da sala...'){
-        ul.innerHTML += `
-                <div id='okk' class="caixaDeTexto cinza"><p>${time}  ${from} para ${to} : ${axt}</p></div>
-    
-        `
+        ul.innerHTML += `<div id='okk' class="caixaDeTexto cinza"><p>${time}  ${from} para ${to} : ${axt}</p></div>`
         }else if(type =='private_message'){
-            ul.innerHTML += `
-                <div id='okk' class="caixaDeTexto rosa"><p>${time}  ${from} para ${to} : ${axt}</p></div>
-    
-        `
+            ul.innerHTML += `<div id='okk' class="caixaDeTexto rosa"><p>${time}  ${from} para ${to} : ${axt}</p></div>`
 
         }else{
-            ul.innerHTML += `
-                <div id='okk' class="caixaDeTexto branco"><p>${time}  ${from} para ${to} : ${axt}</p></div>
-    
-        `
+            ul.innerHTML += `<div id='okk' class="caixaDeTexto branco"><p>${time}  ${from} para ${to} : ${axt}</p></div>`
 
         }
         
@@ -139,6 +139,12 @@ function online(){
     {
         name: nome
     })
+    promessa2.catch(DeuRuim)
+}
+function DeuRuim(erro){
+    alert('conexão caiu')
+    entrar()
+
 }
 function confirmadorOnline(){
     setInterval(online,1000);
