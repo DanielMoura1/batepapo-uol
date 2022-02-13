@@ -33,10 +33,14 @@ function  mandarMensagem(){
             type: type // ou "private_message" para o bônus
         })
         promessaMandar.then(apagador)
+        promessaMandar.catch(voltar)
 
         
 
     servidor()
+}
+function voltar(erro){
+    window.location.reload()
 }
 function apagador(apaga){
     
@@ -181,7 +185,7 @@ function selecionarPesoa(pegar){
         }
         if(ok){
             
-            ull.innerHTML +=`<div class="opcoes"  onclick=" menuSeta(this, '${nomee}')">
+            ull.innerHTML +=`<div class="opcoes" data-identifier="message"  onclick=" menuSeta(this, '${nomee}')">
                 <div class="amarrar">
                     <img src="Vector.png" class="imgPerfil">
                     <p>
