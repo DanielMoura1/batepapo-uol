@@ -136,6 +136,9 @@
 .opcoes2 .seta {
     display: none;
 }
+.opcoes3 .seta {
+    display: none;
+}
 
     
 
@@ -143,6 +146,9 @@
     display: block;
 }
 .opcoes2.selecionado .seta{
+    display: block;
+}
+.opcoes3.selecionado .seta{
     display: block;
 }
 .ad{

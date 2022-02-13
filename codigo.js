@@ -63,18 +63,43 @@ function menuSeta(eu,name1){
     eu.classList.add('selecionado')
     para=name1
     
+    
+    
 }
-function menuSeta2(eu,pegar){
-    const seta =document.querySelector('.opcoesCaixa2 .selecionado')
+//function menuSeta2(eu,pegar){
+  //  const seta =document.querySelector('.opcoesCaixa2 .selecionado')
     
-    if(seta !== null){
+    //if(seta !== null){
        
-        seta.classList.remove('selecionado')
-    }
+      //  seta.classList.remove('selecionado')
+    //}
    
-    eu.classList.add('selecionado')
-    type = pegar
+    //eu.classList.add('selecionado')
+    //type = pegar
     
+//}
+function Reservado(){
+    const seta =document.querySelector('.opcoes2')
+   
+    seta.classList.add('selecionado')
+    
+    const seta2 = document.querySelector('.opcoes3')
+        
+    seta2.classList.remove('selecionado')
+    type ='private_message'
+        
+}
+function Publico(){
+    
+    const seta =document.querySelector('.opcoes3')
+    
+    seta.classList.add('selecionado')
+    
+    const seta2 = document.querySelector('.opcoes2')
+        
+    seta2.classList.remove('selecionado')
+    type ='message'
+        
 }
 function entrar(){
     
@@ -185,7 +210,7 @@ function selecionarPesoa(pegar){
         }
         if(ok){
             
-            ull.innerHTML +=`<div class="opcoes" data-identifier="message"  onclick=" menuSeta(this, '${nomee}')">
+            ull.innerHTML +=`<div class="opcoes" data-identifier="message"  onclick=" menuSeta(this, '${nomee}',Reservado())">
                 <div class="amarrar">
                     <img src="Vector.png" class="imgPerfil">
                     <p>
